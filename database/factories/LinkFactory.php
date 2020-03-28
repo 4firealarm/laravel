@@ -1,14 +1,15 @@
 <?php
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-
-use App\Link;
 use Faker\Generator as Faker;
 
-$factory->define(Link::class, function (Faker $faker) {
+$factory->define(\App\Models\Link::class, static function (Faker $faker) {
+
+    $datetime = now()->toDateTimeString();
+
     return [
-        'title' => substr($faker->sentence(2), 0, -1),
-        'url' => $faker->url,
-        'description' => $faker->paragraph,
+        'name' => $faker->catchPhrase,
+        'href' => $faker->url,
+        'created_at' => $datetime,
+        'updated_at' => $datetime,
     ];
 });

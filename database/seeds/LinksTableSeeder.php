@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Link;
 use Illuminate\Database\Seeder;
 
 class LinksTableSeeder extends Seeder
@@ -11,6 +12,11 @@ class LinksTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Link::class, 5)->create();
+        $data = factory(Link::class)
+            ->times(6)
+            ->make()
+            ->toArray();
+
+        Link::insert($data);
     }
 }
