@@ -4,7 +4,7 @@
       <li class="media">
         <div class="media-left">
           <a href="{{ route('users.show', [$topic->user_id]) }}">
-            <img class="mr-3 img-thumbnail" src="{{ cdn_aliyun($topic->user->avatar) }}"
+            <img class="mr-3 img-thumbnail" src="{{ Avatar::create(Auth::user()->name)->toBase64() }}"
                  title="{{ $topic->user->name }}"
                  style="width: 52px; height: 52px;" alt="{{ $topic->user->name }}">
           </a>
