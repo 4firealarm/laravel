@@ -16,7 +16,7 @@
         <div class="media">
           <div class="media-left">
             <a href="{{ route('users.show', $user->id) }}">
-              <img src="{{ cdn_aliyun($user->avatar) }}" class="rounded-circle"
+              <img src="{{ Avatar::create(Auth::user()->name)->toBase64() }}" class="rounded-circle"
                    width="24px" height="24px" alt="{{ $user->name }}">
             </a>
           </div>
