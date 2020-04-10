@@ -13,7 +13,7 @@ class CreateCategoriesTable extends Migration
     public function up(): void
     {
         Schema::create('categories', static function (Blueprint $table) {
-            $table->increments('id')->unsigned()->comment('主键 ID');
+            $table->string('id', 30)->comment('主键 ID');
             $table->string('name', 50)->index('idx_name')->comment('分类名称');
             $table->string('description')->nullable()->comment('分类描述');
             $table->integer('post_count')->unsigned()->default(0)->comment('帖子数量');

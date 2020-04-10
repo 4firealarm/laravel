@@ -17,7 +17,7 @@ class CreateTopicsTable extends Migration
             $table->string('title')->index('idx_title')->comment('话题标题');
             $table->text('body')->comment('话题内容');
             $table->unsignedInteger('user_id')->index('idx_user_id')->comment('用户 ID，关联 users 表主键 ID');
-            $table->unsignedInteger('category_id')->index('idx_category_id')->comment('分类 ID，关联 categories 表主键 ID');
+            $table->string('category_id',30)->index('idx_category_id')->comment('分类 ID，关联 categories 表主键 ID');
             $table->unsignedInteger('last_reply_user_id')->default(0)->comment('最后回复的用户 ID，关联 users 表主键 ID');
             $table->unsignedInteger('reply_count')->default(0)->comment('回复数量');
             $table->unsignedInteger('view_count')->default(0)->comment('查看数量');
