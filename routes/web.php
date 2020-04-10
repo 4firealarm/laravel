@@ -82,5 +82,6 @@ Route::get('/logout', 'SessionsController@destroy');
 
 Auth::routes();
 
-Route::get('/home', 'Web\HomeController@index')->name('home');
+/*Route::get('/home', 'Web\HomeController@index')->name('home');*/
+Route::get('/daydayup','daydayupController@index')->name('daydayup');
 

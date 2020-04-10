@@ -36,7 +36,7 @@ class SlugTranslateHandler
             'sign' => $sign,
         ];
         $query = http_build_query($args);
-        $response = $client->get($url . $query);
+        $response = $client->get($url.$query);
         $result = json_decode($response->getBody(), true);
 
         if ($isBaidu) {

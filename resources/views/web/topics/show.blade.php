@@ -13,7 +13,7 @@
           <div class="media">
             <div align="center">
               <a href="{{ route('users.show', $topic->user->id) }}">
-                <img class="thumbnail img-fluid" src="{{ cdn_aliyun($topic->user->avatar) }}"
+                <img class="thumbnail img-fluid" src="{{ Avatar::create(Auth::user()->name)->toBase64() }}"
                      width="300px" height="300px">
               </a>
             </div>
