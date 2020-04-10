@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light shadow-sm bbs-navbar">
   <div class="container">
     <a href="{{ url('/') }}" class="navbar-brand">
-      {{ config('app.name', 'LaravelBBS') }}
+      {{ config('app.name', 'HelloWorld') }}
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
@@ -15,16 +15,16 @@
           <a href="{{ route('topics.index') }}" class="nav-link">话题</a>
         </li>
         <li class="nav-item {{ nav_active_class(1) }}">
-          <a href="{{ route('categories.show', 1) }}" class="nav-link">分享</a>
+          <a href="{{ route('categories.show', 'daydayup') }}" class="nav-link">天天向上</a>
         </li>
         <li class="nav-item {{ nav_active_class(2) }}">
-          <a href="{{ route('categories.show', 2) }}" class="nav-link">教程</a>
+          <a href="{{ route('categories.show', 'climber') }}" class="nav-link">职场那些事</a>
         </li>
         <li class="nav-item {{ nav_active_class(3) }}">
-          <a href="{{ route('categories.show', 3) }}" class="nav-link">对话</a>
+          <a href="{{ route('categories.show', 'bebetter') }}" class="nav-link">过好小日子</a>
         </li>
         <li class="nav-item {{ nav_active_class(4) }}">
-          <a href="{{ route('categories.show', 4) }}" class="nav-link">公告</a>
+          <a href="{{ route('categories.show', 'announcements') }}" class="nav-link">公告</a>
         </li>
       </ul>
 

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
   <meta name="renderer" content="webkit">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title', config('app.name')) - Laravel</title>
+  <title>@yield('title', config('app.name')) - HelloWorld</title>
   <meta name="description" content="@yield('description', 'Laravel Artisan')"/>
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   @yield('styles')
