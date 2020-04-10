@@ -22,9 +22,10 @@ class TopicObserver
      */
     public function saved(Topic $topic): void
     {
-        if (! $topic->slug) {
+        /**if (! $topic->slug) {
             dispatch(new SlugTranslateJob($topic));
         }
+		*/
     }
 
     /**
