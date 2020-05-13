@@ -248,7 +248,7 @@
     <div class="links">
       <a href="http://localhost:8000/daydayup">天天向上</a>
       <a href="https://laracasts.com">职场那些事</a>
-      <a href="https://laravel-news.com">闲话生活</a>
+      <a href="https://laravel-news.com">过好小日子</a>
     </div>
   </div>
 </div>
