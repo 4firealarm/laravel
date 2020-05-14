@@ -5,7 +5,7 @@ namespace App\Models;
 /**
  * App\Models\Category
  *
- * @property int $id 主键 ID
+ * @property string $id 主键 ID
  * @property string $name 分类名称
  * @property string|null $description 分类描述
  * @property int $post_count 帖子数量
@@ -26,6 +26,8 @@ namespace App\Models;
  */
 class Category extends Model
 {
+    public $incrementing = false;
+    protected $keyType = 'string';
     protected $fillable = [
         'name', 'description',
     ];

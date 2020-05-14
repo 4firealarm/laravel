@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @property string $title 话题标题
  * @property string $body 话题内容
  * @property int $user_id 用户 ID，关联 users 表主键 ID
- * @property int $category_id 分类 ID，关联 categories 表主键 ID
+ * @property string $category_id 分类 ID，关联 categories 表主键 ID
  * @property int $last_reply_user_id 最后回复的用户 ID，关联 users 表主键 ID
  * @property int $reply_count 回复数量
  * @property int $view_count 查看数量
@@ -49,8 +49,8 @@ class Topic extends Model
     protected $fillable = [
         'title',
         'body',
-        'user_id',
         'category_id',
+        'user_id',
         'excerpt',
         'slug',
     ];

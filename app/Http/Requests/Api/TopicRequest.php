@@ -5,7 +5,7 @@ namespace App\Http\Requests\Api;
 /**
  * @property string $title 话题标题
  * @property string $body 话题内容
- * @property int $category_id 话题分类
+ * @property string $category_id 话题分类
  */
 class TopicRequest extends FormRequest
 {

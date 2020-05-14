@@ -16,7 +16,7 @@ class TopicTransformer extends TransformerAbstract
             'title' => $topic->title,
             'body' => $topic->body,
             'user_id' => (int) $topic->user_id,
-            'category_id' => (int) $topic->category_id,
+            'category_id' => $topic->category_id,
             'reply_count' => (int) $topic->reply_count,
             'view_count' => (int) $topic->view_count,
             'last_reply_user_id' => (int) $topic->last_reply_user_id,
@@ -34,6 +34,6 @@ class TopicTransformer extends TransformerAbstract
 
     public function includeCategory(Topic $topic)
     {
-        return $this->item($topic->category, new CategoryTransformer());
+        return $this->item($topic->category_id, new CategoryTransformer());
     }
 }

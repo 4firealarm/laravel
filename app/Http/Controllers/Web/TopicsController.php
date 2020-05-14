@@ -32,7 +32,7 @@ class TopicsController extends WebController
         ));
     }
 
-    public function create(Request $request, Topic $topic)
+    public function create(Request $request, Topic $topic, Category $categories)
     {
         $categories = Category::all();
 
