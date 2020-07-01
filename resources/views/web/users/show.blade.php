@@ -6,7 +6,8 @@
   <div class="row">
     <div class="col-lg-3 col-md-3 hidden-sm hidden-xs user-info">
       <div class="card ">
-        <img class="card-img-top img-thumbnail" src="{{ cdn_aliyun($user->avatar) }}" alt="{{ $user->name }}">
+      <img class="thumbnail img-fluid" src="{{ Avatar::create(Auth::user()->name)->toBase64() }}"
+                     width="300px" height="300px">
         <div class="card-body">
           <h5><strong>个人简介</strong></h5>
           <p>{{ $user->introduction }}</p>

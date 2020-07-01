@@ -16,7 +16,7 @@ if (! function_exists('nav_active_class')) {
     /**
      * 通过分类 ID 获取激活的类
      *
-     * @param int $category_id
+     * @param string $category_id
      *
      * @return string
      */
