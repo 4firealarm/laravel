@@ -22,11 +22,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ route('admin.dashboard') }}">LaravelBBS-管理后台</a>
+      <a class="navbar-brand" href="{{ route('admin.dashboard') }}">HelloWorld-管理后台</a>
     </div>
     <div class="navbar-collapse collapse">
       @yield('sidebar')
-      @include('admin.partials.navbar', ['navbars' => $navbars])
+      @include('admin.partials.navbar', ['navbars' => $navbars]) 
     </div>
   </div>
 </div>

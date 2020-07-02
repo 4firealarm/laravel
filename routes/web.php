@@ -46,7 +46,7 @@ Route::group(['namespace' => 'Web'], static function () {
 
 Auth::routes();
 
-/*Route::get('/home', 'Web\HomeController@index')->name('home');*/
+
 Route::get('/daydayup','daydayupController@index')->name('daydayup');
 Route::get('/climber','climberController@index')->name('climber');
 Route::get('/bebetter','bebetterController@index')->name('bebetter');

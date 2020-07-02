@@ -11,7 +11,6 @@
 |
 */
 
-
 Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'middleware' => 'admin'], static function () {
 
     // 默认路由
@@ -65,3 +64,4 @@ Route::group(['namespace' => 'Admin', 'as' => 'admin.', 'middleware' => 'admin']
     });
 
 });
+
